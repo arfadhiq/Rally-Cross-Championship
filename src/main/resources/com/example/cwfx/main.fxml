@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane prefHeight="459.0" prefWidth="639.0" style="-fx-background-color: #FFFFCC;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cwfx.MainController">
+   <children>
+      <Button layoutX="238.0" layoutY="147.0" mnemonicParsing="false" onAction="#swichToAdd" prefHeight="25.0" prefWidth="50.0" text="ADD" />
+      <Button fx:id="toDDD" layoutX="237.0" layoutY="185.0" mnemonicParsing="false" onAction="#switchToDDD" prefHeight="25.0" prefWidth="50.0" text="DDD" />
+      <Button layoutX="237.0" layoutY="217.0" mnemonicParsing="false" onAction="#switchToUDD" prefHeight="25.0" prefWidth="50.0" text="UDD" />
+      <Button layoutX="237.0" layoutY="260.0" mnemonicParsing="false" onAction="#switchToVCT" prefHeight="25.0" prefWidth="50.0" text="VCT" />
+      <Button layoutX="238.0" layoutY="302.0" mnemonicParsing="false" onAction="#switchToSRR" prefHeight="25.0" prefWidth="50.0" text="SRR" />
+      <TextFlow layoutX="66.0" layoutY="318.0" />
+      <TextFlow layoutX="68.0" layoutY="166.0" style="-fx-background-color: green;" />
+      <TextFlow layoutX="68.0" layoutY="363.0" style="-fx-border-color: #00CCCC;" />
+      <TextFlow layoutX="68.0" layoutY="215.0" />
+      <TextFlow layoutX="66.0" layoutY="272.0" />
+      <Button layoutX="353.0" layoutY="409.0" mnemonicParsing="false" onAction="#exit" prefHeight="29.0" prefWidth="57.0" style="-fx-background-color: red;" text="EXIT">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="498.0" layoutY="433.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.8" prefHeight="19.0" prefWidth="126.0" text="Arfadhiq Technologies">
+         <font>
+            <Font name="Pristina" size="16.0" />
+         </font>
+      </Label>
+      <Ellipse fill="DODGERBLUE" layoutX="341.0" layoutY="68.0" radiusX="209.0" radiusY="31.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text fill="#1c3b4a" fontSmoothingType="LCD" layoutX="122.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Rally Cross Championship" textAlignment="CENTER" wrappingWidth="437.99609375">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Label layoutX="64.0" layoutY="149.0" prefHeight="20.0" prefWidth="151.0" style="-fx-background-color: #00CCCC;" text="Add a New Driver" textFill="#000000d9">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="64.0" layoutY="187.0" prefHeight="20.0" prefWidth="151.0" style="-fx-background-color: #00CCCC;" text="Delete an Existing Driver">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="65.0" layoutY="221.0" prefHeight="17.0" prefWidth="151.0" style="-fx-background-color: #00CCCC;" text="Update an Existing Driver">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="66.0" layoutY="264.0" prefHeight="17.0" prefWidth="151.0" style="-fx-background-color: #00CCCC;" text="View the Standings Table">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="66.0" layoutY="306.0" prefHeight="17.0" prefWidth="151.0" style="-fx-background-color: #00CCCC;" text="Simulate a Random Race">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Button fx:id="stf" layoutX="237.0" layoutY="339.0" mnemonicParsing="false" onAction="#saveCurrentData" prefHeight="25.0" prefWidth="50.0" text="STF" />
+      <Label layoutX="63.0" layoutY="343.0" prefHeight="17.0" prefWidth="151.0" style="-fx-background-color: #00CCCC;" text="Save the Current Data" textFill="#000000d9">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="379.0" prefHeight="17.0" prefWidth="151.0" style="-fx-background-color: #00CCCC;" text="Load Data" textFill="#000000d9">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="load" layoutX="236.0" layoutY="376.0" mnemonicParsing="false" onAction="#loadCurrentData" prefHeight="25.0" prefWidth="50.0" text="LOAD" />
+      <Label fx:id="mainMsg" layoutX="314.0" layoutY="234.0" prefHeight="20.0" prefWidth="292.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

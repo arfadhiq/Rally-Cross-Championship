@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFCC;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cwfx.VCTController">
+   <children>
+      <TableView fx:id="vcttable" layoutX="53.0" layoutY="75.0" prefHeight="237.0" prefWidth="460.0">
+        <columns>
+          <TableColumn fx:id="namecol" prefWidth="122.0" text="Name" />
+          <TableColumn fx:id="agecol" prefWidth="60.0" text="Age" />
+            <TableColumn fx:id="carcol" prefWidth="100.0" text="Car" />
+            <TableColumn fx:id="teamcol" prefWidth="115.0" text="Team" />
+            <TableColumn fx:id="pointscol" prefWidth="62.0" text="Points" />
+        </columns>
+      </TableView>
+      <Button layoutX="149.0" layoutY="336.0" mnemonicParsing="false" onAction="#setBacknew" style="-fx-background-color: #A0A0A0;" text="BACK" />
+      <TextFlow prefHeight="52.0" prefWidth="603.0" style="-fx-background-color: #808080;">
+         <children>
+            <Label alignment="CENTER" prefHeight="52.0" prefWidth="601.0" text="View Standings">
+               <font>
+                  <Font name="Cambria" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </TextFlow>
+   </children>
+</AnchorPane>

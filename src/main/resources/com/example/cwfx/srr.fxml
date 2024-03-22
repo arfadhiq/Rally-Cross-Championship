@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFCC;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cwfx.SrrController">
+   <children>
+      <Button layoutX="111.0" layoutY="330.0" mnemonicParsing="false" onAction="#setBackSRR" style="-fx-background-color: #A0A0A0;" text="Back" />
+      <Button fx:id="startRace" layoutX="206.0" layoutY="330.0" mnemonicParsing="false" onAction="#random_race" style="-fx-background-color: #00FF80;" text="START" />
+      <TableView fx:id="srrTable" layoutX="95.0" layoutY="106.0" prefHeight="200.0" prefWidth="382.0">
+        <columns>
+          <TableColumn fx:id="srrName" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="srrAge" prefWidth="75.0" text="Age" />
+            <TableColumn fx:id="srrCar" prefWidth="75.0" text="Car" />
+            <TableColumn fx:id="srrTeam" prefWidth="75.0" text="Team" />
+            <TableColumn fx:id="srrPoints" prefWidth="75.0" text="Points" />
+        </columns>
+      </TableView>
+      <Label fx:id="srrCiity" layoutX="124.0" layoutY="64.0" prefHeight="17.0" prefWidth="139.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="srrDate" layoutX="320.0" layoutY="64.0" />
+      <Label layoutX="124.0" layoutY="47.0" text="LOCATION">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="338.0" layoutY="47.0" prefHeight="17.0" prefWidth="41.0" text="DATE" />
+      <TextFlow prefHeight="39.0" prefWidth="601.0" style="-fx-background-color: #808080;">
+         <children>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="593.0" text="Random Race">
+               <font>
+                  <Font name="Cambria" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </TextFlow>
+   </children>
+</AnchorPane>
